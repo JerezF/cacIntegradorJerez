@@ -3,103 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Trabajo Integrador</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo-cac"></div>
-        <nav class="header-nav">
-            <ul class="header-nav-ul">
-                <li class="nav-ul-li"><a href="#article-conferencia">Conf Bs As</a></li>
-                <li class="nav-ul-li"><a href="#"></a></li>
-                <li class="nav-ul-li"></li>
-                <li class="nav-ul-li"></li>
-                <li class="nav-ul-li"><a href="ticket.html" target="_blank">Comprar tickets</a></li>
-            </ul>
+    <header class="header fixed-top">
+        
+        <nav class="header-nav navbar navbar-expand-lg justify-content-between">
+            <div class="logo-cac navbar-brand">
+                <a href="">
+                    <img src="./imagenes_integrador_front/codoacodo.png" alt="Bootstrap" width="50%" height="50%">
+                </a>
+            </div>
+            <div class="header-nav-list">
+                <ul class="header-nav-ul navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-ul-li nav-item"><a href="#article-conferencia" class="nav-link active navbar-brand">La conferencia</a></li>
+                    <li class="nav-ul-li nav-item"><a href="#" class="nav-link active navbar-brand">Los oradores</a></li>
+                    <li class="nav-ul-li nav-item"><a href="#" class="nav-link active navbar-brand">El lugar y la fecha</a></li>
+                    <li class="nav-ul-li nav-item"><a href="#article-convertir-orador" class="nav-link active navbar-brand">Conviértete en orador</a></li>
+                    <li class="nav-ul-li nav-item"><a href="ticket.html" target="_blank" class="nav-link active navbar-brand" style="color: #2a9743;">Comprar tickets</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="main-section-conf">
+    <main class="main-page container-fluid">
+        <section class="main-section-conf w-100">
             <article class="article-conferencia">
-                <h1 class="main-article-title">Conf Bs As</h1>
-                <div class="main-section-article-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, libero eaque quas voluptate iusto iste est at cum! Alias quia delectus harum esse maiores enim obcaecati totam quod, quos iste laudantium, quasi odio repellat repellendus ipsa debitis, est ut laboriosam dolor fugit sit! Ipsa, voluptatibus. Rerum necessitatibus, quaerat suscipit consectetur odio, repellat at quas repellendus vitae earum facilis excepturi cum tempora accusantium quos ut iure ducimus obcaecati iste omnis qui! Placeat cupiditate omnis dolor qui earum fugiat neque amet vero? Reprehenderit pariatur aperiam quisquam quis hic, eaque laboriosam nam provident perspiciatis voluptatibus deleniti sed, ipsam reiciendis ducimus repellendus dolores dolore!</p>
-                    <div class="conferencia-div-btn"><button class="btn-orador"><a href="#article-orador">Quiero ser orador</a></button>
-                        <button class="btn-comprar-ticket"><a href="ticket.html" target="_blank">Comprar tickets</a></button>
+                <div class="mt-5 w-100">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/imagenes_integrador_front/ba1.jpg" class="d-block w-100 opacity-25" alt="Imagen 1">                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imagenes_integrador_front/ba2.jpg" class="d-block w-100 opacity-25 " alt="Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/imagenes_integrador_front/ba3.jpg" class="d-block w-100 opacity-25" alt="Imagen 3">
+                            </div>
+                        </div>
+                        <div class="carousel-text position-absolute text-end col-md-6 col-12 text-light px-5">
+                            
+                            <div class="d-none d-md-block p-5 mt-5">
+                                <h1 class="main-article-title">Conf Bs As</h1>
+                                <p>  Bs As llega por primera vez a Argentina. Un evento para compartir con
+                                    nuestra comunidad el conocimiento y experiencia de los expertos que
+                                    están creando el futuro de Internet. Ven a conocer a miembros del
+                                    evento, a otros estudiantes de Codo a Codo y los oradores de primer
+                                    nivel que tenemos para ti. ¡Te esperamos!</p>
+                                <div class="conferencia-div-btn">
+                                    <button class= "btn-orador"><a href="#article-convertir-orador" class="btn-orar">Quiero ser orador</a></button>
+                                    <button class= "btn btn-success" style="color: #29a744;"><a href="ticket.html" target="_blank" class="btn-comprar-ticket">Comprar tickets</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
                     </div>
                 </div>
             </article>
-            <article class="article-oradores">
-                <div class="article-oradores-title">
-                    <h2>CONOCE A LOS <br> ORADORES</h2>
-                </div>
-                <div class="article-orador-one">
-                    <img src="/imagenes_integrador_front/steve.jpg" alt="steve-jobs" class="img-orador">Steve Jobs
-                    <div class="tecnologia">
-                        <p class="tecnologia-js">Javascript</p>
-                        <p class="tecnologia-react">React</p>
+            <div class="container">
+                <article class="article-oradores pt-3">
+                    <div class="article-oradores-title text-center">
+                        <h2 class="form-control-sm">CONOCE A LOS <br> <span class="span-oradores">ORADORES</span></h2>
                     </div>
-                    <p class="orador orador-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit cumque maxime error. Provident deleniti tempore placeat, nemo fuga recusandae earum optio expedita obcaecati vel, eaque error nihil quas necessitatibus?</p>
-                </div>
-                <div class="article-orador-two">
-                    <img src="/imagenes_integrador_front/bill.jpg" alt="bill-gates" class="img-orador">Bill Gates
-                    <div class="tecnologia">
-                        <p class="tecnologia-js">Javascript</p>
-                        <p class="tecnologia-react">React</p>
+                    <div class="card-group group-card">
+                        <div class="card mx-2 mb-4 " style="width: 18rem;"" >
+                            <img src="/imagenes_integrador_front/steve.jpg" alt="steve-jobs" class="card-img-top">
+                            <div class="tecnologia card-body">
+                                <p class="tecnologia-js btn btn-warning">Javascript</p>
+                                <p class="tecnologia-react btn btn-info">React</p>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="orador orador-text card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit cumque maxime error. Provident deleniti tempore placeat, nemo fuga recusandae earum optio expedita obcaecati vel, eaque error nihil quas necessitatibus?</p>
+                            </div>
+                        </div>
+                        <div class="card mx-2 mb-4 " style="width: 18rem;">
+                            <img src="/imagenes_integrador_front/bill.jpg" alt="bill-gates" class="img-orador card-img-top">
+                            <div class="tecnologia card-body">
+                                <p class="tecnologia-js btn btn-warning">Javascript</p>
+                                <p class="tecnologia-react btn btn-info">React</p>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="orador orador-text card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit cumque maxime error. Provident deleniti tempore placeat, nemo fuga recusandae earum optio expedita obcaecati vel, eaque error nihil quas necessitatibus?</p>
+                            </div>
+                        </div>
+                        <div class="card mx-2 mb-4 " style="width: 18rem;">
+                            <img src="/imagenes_integrador_front/ada.jpeg" alt="ada-lovelace" class="img-orador card-img-top">
+                            <div class="tecnologia card-body">
+                                <p class="tecnologia-negocio btn btn-danger" >Negocios</p>
+                                <p class="tecnologia-startup btn btn-info">Startups</p>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="orador orador-text card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur vel natus deleniti voluptates impedit molestiae ipsa odio architecto, similique non dolores, tempore ipsum maxime sequi quas amet iusto id maiores enim. Assumenda, explicabo alias. Nesciunt.</p>
+                            </div>
+                            
+                        </div>
                     </div>
-                    <p class="orador orador-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit cumque maxime error. Provident deleniti tempore placeat, nemo fuga recusandae earum optio expedita obcaecati vel, eaque error nihil quas necessitatibus?</p>
-                </div>
-                <div class="article-orador-three">
-                    <img src="/imagenes_integrador_front/ada.jpeg" alt="ada-lovelace" class="img-orador">Ada Lovelace
-                    <div class="tecnologia">
-                        <p class="tecnologia-negocio">Negocios</p>
-                        <p class="tecnologia-startup">Startups</p>
-                    </div>
-                    <p class="orador orador-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit cumque maxime error. Provident deleniti tempore placeat, nemo fuga recusandae earum optio expedita obcaecati vel, eaque error nihil quas necessitatibus?</p>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
-        <article class="article-bsas">
-            <h1 class="article-bsas-title">Bs As  -  Octubre</h1>
-            <div class="article-bsas-img">
-                <img src="/imagenes_integrador_front/honolulu.jpg" alt="honolulu" class="img-honolulu">
+        <div class="card mb-3" style="max-width: 100%; background-color: #353a40">
+            <div class="row g-0">
+                <div class="col-md-4" >
+                    <img src="/imagenes_integrador_front/honolulu.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Bs As  -  Octubre</h5>
+                        <p class="card-text text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam accusantium ut dolores ipsa fugiat explicabo architecto officiis incidunt eveniet quod tempora earum mollitia labore soluta et, ipsum praesentium ea odit impedit magni saepe! Possimus maiores odio quibusdam similique expedita culpa!</p>
+                        <p class="card-text"><small class="text-body-secondary"> <button class="btn-orador">Conocé más</button></small></p>
+                    </div>
+                </div>
             </div>
-            <div class="article-bsas-text">
-                <p class="article-bsas-text-p">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam accusantium ut dolores ipsa fugiat explicabo architecto officiis incidunt eveniet quod tempora earum mollitia labore soluta et, ipsum praesentium ea odit impedit magni saepe! Possimus maiores odio quibusdam similique expedita culpa!
-                </p>
-                <button class="btn-article-bsas">Conocé más</button>
-            </div>
-        </article>
-        <article class="article-convertir-orador">
-            <div class="article-convertir-title">
-                <h2>CONVIÉRTE EN UN<br> ORADOR </h2>
-                <p>Anótate como orador para dar una <a href="https://lc.cx/XH4slr" target="_blank"> charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
-            </div>
-            <div class="article-convertir-formulario">
-                <form action="">
-                    <input type="text" placeholder="Nombre" class="article-formulario-name">
-                    <input type="text" placeholder="Apellido" class="article-formulario-name">
-                    <input type="text" placeholder="Sobre qué quieres hablar?">
-                    <p>Recuerda incluir un título para tu charla</p>
-                    <button type="button" class="btn-article-formulario">Enviar</button>
-                </form>
-            </div>
-        </article>
+        </div>
+        <div class="container my-auto mx-auto p-5 pt-2">
+            <article class="" id="article-convertir-orador">
+                <div class="text-center">
+
+                    <h2><small class="text-muted form-control-sm">CONVIERTE EN UN</small><br> <span>ORADOR</span> </h2>
+                    <p>Anótate como orador para dar una <a href="https://lc.cx/XH4slr" target="_blank" class="link-ignite"> charla ignite</a>. Cuéntanos de qué quieres hablar!</p>
+                </div>
+                    <form action="">
+                        <div class="row g-3 p-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                            </div>
+                        </div>
+                            <div class="p-3">
+                                <textarea class="form-control" placeholder="Sobre qué quieres hablar?" id="floatingTextarea2" style="height: 100px"></textarea>
+                            </div>
+                            <div class="text-center d-grid gap-2 ">
+                                <button type="button" class="btn btn-primary btn-block" style="background-color: #96c93e;">Enviar</button>
+                            </div>
+                    </form>
+                </div>
+            </article>
+        </div>
     </main>
-    <footer class="footer">
-        <div class="footer-list">
-            <ul class="footer-list-ul">
-                <li class="footer-list-ul-li">Preguntas frecuentes</li>
-                <li class="footer-list-ul-li">Contáctanos</li>
-                <li class="footer-list-ul-li">Prensa</li>
-                <li class="footer-list-ul-li">Conferencias</li>
-                <li class="footer-list-ul-li">Términos y condiciones</li>
-                <li class="footer-list-ul-li">Privacidad</li>
-                <li class="footer-list-ul-li">Estudiantes</li>
-            </ul>
+    <footer class="bg-dark text-light text-center py-3">
+        <div class="container">
+            <div>
+                <ul class="footer-links d-flex justify-content-between list-unstyled">
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Preguntas frecuentes</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Contáctanos</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Prensa</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Conferencias</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Terminos y condiciones</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Privacidad</a></li>
+                    <li class="nav-ul-li nav-item"><a href="" class="footer-link text-white text-decoration-none">Estudiantes</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

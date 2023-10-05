@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.main-page {
+    display: block;
+}
+
+.header {
+    background-color: #353a40;
+}
+
+.header-nav-list {
+    margin-right: 70px;
+}
+
+.logo-cac {
+    margin-left: 70px;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+.btn-orador{
+    background-color: transparent;
+    border: 2px solid #fff; 
+    color: #fff; 
+    border-radius: 5px;
+}
+
+.btn-comprar-ticket{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-orar {
+    color: white;
+    text-decoration: none;
+}
+
+.article-orador{
+    margin: 25px;
+}
+
+.title-oradores{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.span-oradores{
+    font-size: 50px;
+}
+
+.article-conferencia{
+    background-color: black;
+}
+
+.footer-custom {
+    background-color: da;
+}
+
+.link-ignite {
+    text-decoration: underline dotted;
+    color: black
+}
